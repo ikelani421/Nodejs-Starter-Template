@@ -1,0 +1,8 @@
+{
+    "watch": ["server"],
+    "ext": "js",
+    "ignore": ["*.test.js"],
+    "delay": "3",
+    "exec": "babel-node server/app.js"
+  }
+  

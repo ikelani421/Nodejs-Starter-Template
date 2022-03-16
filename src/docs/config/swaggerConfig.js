@@ -10,7 +10,7 @@ const swaggerDefinition = {
     version: '1.0.0',
     description: 'description',
     contact: {
-      name: 'Approval Workflow Backend',
+      name: '',
       url: ''
     }
   },

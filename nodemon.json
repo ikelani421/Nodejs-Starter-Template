@@ -1,8 +1,7 @@
 {
-    "watch": ["server"],
+    "watch": ["src"],
     "ext": "js",
     "ignore": ["*.test.js"],
     "delay": "3",
-    "exec": "babel-node server/app.js"
+    "exec": "babel-node src/index.js"
   }
-  

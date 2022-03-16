@@ -1,4 +1,4 @@
-FROM node:12.15.0-alpine3.9
+FROM node:16-alpine3.14
 RUN npm install sequelize -g
 WORKDIR /server
 COPY package.json .

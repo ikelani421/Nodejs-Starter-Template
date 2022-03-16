@@ -1,7 +1,7 @@
 import logger from 'helpers/logger';
 import APIException from './APIException';
 import { RESPONSE_MESSAGE } from './Constants';
-import ServerResponse from './ServerResponse';
+import ServerResponses from '../helpers/ServerResponses';
 
 /**
      * @description the app ues a general global exception handler
@@ -30,7 +30,7 @@ export const generalErrorHandler = (err, req, res, next) => {
     message = RESPONSE_MESSAGE.SOMETHING_WENT_WRONT;
   }
   logger.error(err);
-  return ServerResponse.appError(res, message, errors, responseCode);
+  return ServerResponses.appError(res, message, errors, responseCode);
 };
 
 /**

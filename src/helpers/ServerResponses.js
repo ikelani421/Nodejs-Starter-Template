@@ -3,7 +3,7 @@
 *
 * @class HomeController
 */
-class ServerResponse {
+class ServerResponses {
   /**
        * @description - for success ok
        * @param {object} res the response object
@@ -25,15 +25,15 @@ class ServerResponse {
   }
 
   /**
-         * @description - for not found
-         * @param {object} res the response object
-         * @param {string} message The message to the client
-         * @param {object} error the data to from the activity
-         * @param {Number} responseCode request response code
-         * @param {Number} statusCode the status code to be sent to user
-         * @param {String} status the status of the event
-         * @returns {object} returns response object with the necessary info
-         */
+   * @description - for error response
+   * @param {object} res the response object
+   * @param {string} message The message to the client
+   * @param {object} error the data to from the activity
+   * @param {Number} responseCode request response code
+   * @param {Number} statusCode the status code to be sent to user
+   * @param {String} status the status of the event
+   * @returns {object} returns response object with the necessary info
+   */
   static appError(res, message, error = null, responseCode = null, statusCode = 400,
     status = 'error') {
     return res.status(statusCode).json({
@@ -45,4 +45,4 @@ class ServerResponse {
   }
 }
 
-export default ServerResponse;
+export default ServerResponses;
